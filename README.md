@@ -79,5 +79,6 @@ Open the <b>.sln</b> file using Visual Studio
 
 * Hamza Bourrahim
 * Godeleine Champenois
-* Quentin Jeannaud
+* Worphy Bimboutsa
+* Ralph Obame
 
