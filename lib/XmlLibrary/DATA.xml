@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- General structure of xml file with comments-->
+
+<facetracker>
+  <!-- 	data node is used to classify images.
+  
+		-> url is the adress to the folder with the pictures. Every Image in a data are in the same folder
+	note : more that one data node may have the same adress. A <data> isn't necessary a folder 
+	
+		-> number is the numbers of pictures within that data.
+		
+		-> id is the face identified on the image. id=0 or the attribute doesn't exist when the face 
+	hasn't been identified yet	
+	note : every image in a data has the same id.
+  -->
+  <data url="url" number="1" id="0">
+    <image> 
+      <name>NomImage1</name>
+      <camera>NameCamera</camera>
+      <date>AAAA:MM:JJ</date>
+      <time>00:00:00</time>
+      <LastOpened>JJ/MM/AAAA</LastOpened>
+	  <!-- more nodes may be added here -->
+    </image>
+  </data>
+</facetracker>
+        

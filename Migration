@@ -1,0 +1,13 @@
+/*
+  Migration
+  @ Team:     OpenFaceTracker
+*/
+
+
+-changing header files
+- changing cv::Mat to cv::cvarrToMat
+- changing contrib.hpp to face.hpp
+- using http://docs.opencv.org/trunk/dd/d65/classcv_1_1face_1_1FaceRecognizer.html for same new function
+- deprecated functions in ft_draw.cpp
+- should install libopencv-stitching-dev
+- should install libgtk2.0-dev

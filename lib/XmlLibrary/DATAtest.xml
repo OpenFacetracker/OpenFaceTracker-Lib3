@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- Test Version for DATA -->
+<facetracker>
+    <data url="url3" number="0" />
+    <data url="url1" number="3" id="0">
+        <image>
+            <name></name>
+            <camera></camera>
+            <date></date>
+            <time></time>
+            <LastOpened></LastOpened>
+        </image>
+        <image>
+            <name>NomImage2</name>
+            <camera>NameCamera2</camera>
+            <date>AAAA:MM:JJ</date>
+            <time>00:00:00</time>
+            <LastOpened>JJ/MM/AAAA</LastOpened>
+        </image>
+        <image>
+            <name>NomImage1</name>
+            <camera>NameCamera</camera>
+            <date>AAAA:MM:JJ</date>
+            <time>00:00:00</time>
+            <LastOpened>JJ/MM/AAAA</LastOpened>
+        </image>
+    </data>
+    <data url="url2" number="-2" />
+</facetracker>

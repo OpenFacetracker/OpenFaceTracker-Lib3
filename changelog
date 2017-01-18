@@ -1,0 +1,81 @@
+/*
+ * Facetracker
+ * @authors : Hamza & Godeleine & Quentin
+ *
+*/
+
+|Apr 02 - 2015|
+
+-adding delete on cmd (BETA)
+-supports cmd writting
+-adding interface for checking and for cmd
+-fixing rtsp bug
+-ft supports youtube stream , and youtube video , also simple video
+
+|Mar 12 - 2015|
+
+-adding name drawing
+-arg -o supports Camera argument . ex facetracker -o CAM0
+-listing Camera only work for linux
+-adding -l param , for listing all cameras
+-adding FT drawing form for debug , enabled by default (-DFT_FORM)
+-fixing drawText param
+-fixing size bug
+-adding dotted line drawing
+-adding Image drawing , supports transparency
+-adding timer on the camera
+-adding Camera name
+-adding text drawing function
+
+|fev 22 - 2015|
+
+-adding FT_DEBUG to g++
+-adding DEBUGP macro , print message with line , file and function name
+-use -o to open the camera
+-fixing g++ compilation while using opencv , now it works on linux
+-adding opencv detection (ft_detect.cpp)
+-use -x <xmlfile> to read the file
+-adding a function for testing xml
+-changing some pwd on the makefile
+-adding makefile for the xmllibrary
+-Xmllibrary is working on linux and win32
+-adding Xmllibrary for win32
+
+|feb 04 - 2015|
+
+-adding option -DFT_USE_COLOR = TRUE to g++
+-adding database class
+-adding security class ( protecting stackoverflow, bounds ...) available at secure.h
+-adding color.h
+
+|Feb 01 - 2015|
+
+-Fixing Config::getElem() , the first char is not space
+-writeLog() will write all log strings and then free the list
+-You can use addlog() so as to add log text to the list
+-adding log system
+-adding getopt for win32(win32getopt and win32 parseer)
+
+|Jan 26 - 2015|
+
+-Use getElem to get an element from config file
+-You can use %s -r PATH_TMP for reading the value of this latter in ft.conf
+-Adding parser for config file
+-Write function contains new options ( INLINE, FORMAT, WITHOUT)
+-Adding help function
+-Adding parser for getopt arg
+-Init_color() is now a public function
+-Adding libxml and libxmlforft.a
+-Fixing deprecated conversion string
+
+|Dec 14 - 2014|
+
+-Adding header , with informations
+-Adding Config class and conf file
+-Console init is set by *console = new Console;
+-Adding writeDone and writeAction
+
+|Dec 7 - 2014|
+
+-Adding writeError function and color system
+-Adding Console functions
