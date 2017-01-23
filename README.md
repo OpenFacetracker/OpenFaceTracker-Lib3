@@ -24,8 +24,7 @@ This README would normally document whatever steps are necessary to get OpenFace
 
 ### How do I get set up? ###
 
-build Openfacetracker using source code
-To understand the sructure of the OFT project please read the WIKI .
+Build Openfacetracker using source code, to understand the sructure of the OFT project please read the WIKI .
 
 #Linux
 
@@ -78,15 +77,15 @@ You can compile OpenFaceTracker using different Options .
 * <b>-DFT_TEST_RECOGNISE</b>	= Enable recognition
 * <b>-DFT_OPTIMISATION</b>	= Enable optimisation
 
-#Windows (OpenFaceTRackerLib3)
+#Windows (OpenFaceTrackerLib3)
 
 No Visual Project file for this version
 
 #Available Arguments
 -o : allows you to open a media source (camera , picture , video, rtsp link..)
 
-	$ ./facetracker -o CAM0 (open camera id=0)
-	$ ./facetracker -o video.avi (open the file video.avi)
+	$ ./openft -o CAM0 (open camera id=0)
+	$ ./openft -o video.avi (open the file video.avi)
 
 ### Contributors ###
 
