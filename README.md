@@ -27,15 +27,17 @@ This README would normally document whatever steps are necessary to get OpenFace
 
 Build Openfacetracker using source code, to understand the sructure of the OFT project please read the WIKI .
 
+#Dependecies(Debian - ubuntu) : 
+
+	$ sudo apt-get install libopencv-dev
+	
+Please Read the WIKI ,so as to get the right verson of OpenCV and QT
+
 #Linux
 
 	$ git clone https://github.com/OpenFacetracker/OpenFaceTracker-Lib3.git
 	$ cd OpenFaceTracker-Lib3
 	
-	
-Installing dependecies(Debian - ubuntu) : 
-
-	$ sudo apt-get install libopencv-dev
 	
 Making the project : 
 
