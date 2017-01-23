@@ -5,14 +5,14 @@
 
 This README would normally document whatever steps are necessary to get facetracker up and running.
 
-![alt text](https://cdn1.iconfinder.com/data/icons/skype-icons/128/skype_camera.png "FT logo")
+![alt text](http://nsa37.casimages.com/img/2017/01/23/170123032545702496.png "OFT logo")
 
 ### What is this repository for? ###
 
-* Share facetracker code 
-* Facetracker is insipred from the American Tv show "Person Of Interest"
-* Version 1.2
-* This repo contains facetracker-core  . You can check out facetracker-gui via this link . https://github.com/Facetracker-project/facetracker-gui
+* Share OpenFaceTracker code 
+* OpenFaceTracker is insipred from the American Tv show "Person Of Interest"
+* Version 3.0
+* This repo contains OpenFaceTrackerLib3
 
 ### Screen ###
 
@@ -65,9 +65,9 @@ You can compile facetracker using different Options .
 * <b>-DFT_TEST_RECOGNISE</b>	= Enable recognition
 * <b>-DFT_OPTIMISATION</b>	= Enable optimisation
 
-#Windows (facetracker core)
+#Windows (OpenFaceTRackerLib3)
 
-Open the <b>.sln</b> file using Visual Studio
+No Visual Project file for this version
 
 #Available Arguments
 -o : allows you to open a media source (camera , picture , video, rtsp link..)
