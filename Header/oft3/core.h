@@ -76,7 +76,7 @@
  	#endif
 #endif
 
-#define VERSION 	"2.4.1"
+#define VERSION 	"3.0.1"
 #define CONFIG 		"Config/ft.conf"
 
 /* OPTION FOR WRITE FUNCTION */
