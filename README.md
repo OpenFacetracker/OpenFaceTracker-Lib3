@@ -31,7 +31,7 @@ Build Openfacetracker using source code, to understand the sructure of the OFT p
 
 	$ sudo apt-get install libopencv-dev
 	
-Please Read the WIKI ,so as to get the right verson of OpenCV and QT
+Please Read the WIKI, so as to get the right verson of OpenCV and QT
 
 #Linux
 
