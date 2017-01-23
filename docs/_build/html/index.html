@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>README &#8212; OpenFaceTracker 3.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '3.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p><a class="reference external" href="https://raw.githubusercontent.com/Facetracker-project/facetracker-core/master/COPYING"><img alt="GitHub license" src="https://img.shields.io/badge/content-core-yellow.svg" /></a>
+<a class="reference external" href="https://raw.githubusercontent.com/Facetracker-project/facetracker-core/master/COPYING"><img alt="GitHub license" src="https://img.shields.io/badge/codename-TheMachine-red.svg" /></a>
+<a class="reference external" href="https://raw.githubusercontent.com/Facetracker-project/facetracker-core/master/COPYING"><img alt="GitHub license" src="https://img.shields.io/badge/license-GPLv3-blue.svg" /></a> <a class="reference external" href="https://codeclimate.com/repos/56363a6b6956801daf00c1ec/feed"><img alt="Code Climate" src="https://codeclimate.com/repos/56363a6b6956801daf00c1ec/badges/31b2ffeeb02d53158157/gpa.svg" /></a> <a class="reference external" href="https://codeclimate.com/repos/56363a6b6956801daf00c1ec/coverage"><img alt="Test Coverage" src="https://codeclimate.com/repos/56363a6b6956801daf00c1ec/badges/31b2ffeeb02d53158157/coverage.svg" /></a> <a class="reference external" href="http://badge.fury.io/gh/invicnaper%2FMWF"><img alt="GitHub version" src="https://badge.fury.io/gh/invicnaper%2FMWF.svg" /></a></p>
+<div class="section" id="readme">
+<span id="readme"></span><h1>README<a class="headerlink" href="#readme" title="Permalink to this headline">¶</a></h1>
+<p>This README would normally document whatever steps are necessary to get OpenFaceTracker-Lib3 up and running.</p>
+<p><img alt="alt text" src="http://nsa37.casimages.com/img/2017/01/23/170123032545702496.png" /></p>
+<div class="section" id="what-is-this-repository-for">
+<span id="what-is-this-repository-for"></span><h2>What is this repository for?<a class="headerlink" href="#what-is-this-repository-for" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Share OpenFaceTracker code</li>
+<li>OpenFaceTracker is insipred from the American Tv show &#8220;Person Of Interest&#8221;</li>
+<li>Version 3.0</li>
+<li>This repo contains OpenFaceTrackerLib3</li>
+<li>www.openfacetracker.net</li>
+</ul>
+</div>
+<div class="section" id="screen">
+<span id="screen"></span><h2>Screen<a class="headerlink" href="#screen" title="Permalink to this headline">¶</a></h2>
+<p><img alt="alt text" src="http://www.openfacetracker.net/wp-content/uploads/2016/10/13479869_596599990514829_1971266384_n.jpg" /></p>
+<p><img alt="alt text" src="http://www.openfacetracker.net/wp-content/uploads/2016/10/openfacetracker.jpg" /></p>
+</div>
+<div class="section" id="how-do-i-get-set-up">
+<span id="how-do-i-get-set-up"></span><h2>How do I get set up?<a class="headerlink" href="#how-do-i-get-set-up" title="Permalink to this headline">¶</a></h2>
+<p>Build Openfacetracker using source code, to understand the sructure of the OFT project please read the WIKI .</p>
+<p>#Dependecies(Debian - ubuntu) :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get install libopencv-dev
+</pre></div>
+</div>
+<p>Please Read the WIKI, so as to get the right verson of OpenCV and QT</p>
+<p>#Linux</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git clone https://github.com/OpenFacetracker/OpenFaceTracker-Lib3.git
+$ cd OpenFaceTracker-Lib3
+</pre></div>
+</div>
+<p>Making the project :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ make
+*  OpenFaceTracker Building    *
+make compil         : Compil facetracker source code
+make lib            : Build facetracker as a library
+make binary         : Build facetracker as a binary file
+make memleaks       : Check memory leaks
+</pre></div>
+</div>
+<p>to compile all oft modules :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ make compil
+</pre></div>
+</div>
+<p>to generate the binary file :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ make binary
+</pre></div>
+</div>
+<p>if you want to use OFT as a library , use :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ make lib
+</pre></div>
+</div>
+<p>then execute it using</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./openft
+</pre></div>
+</div>
+<p>#Linux ( Adding Options)
+You can compile OpenFaceTracker using different Options .</p>
+<ul class="simple">
+<li><b>-DFT_USE_COLOR</b>     = Enable color output</li>
+<li><b>-DFT_DEBUG_ENABLED</b>     = Enable Debug mode</li>
+<li><b>-DFT_ALLOW_EXCEPT</b>  = Enable exceptions</li>
+<li><b>-DFT_WINCAM_LIST</b>   = Enable camera listing for Windows</li>
+<li><b>-DFT_TEST_PERFORMANCE</b> = Enable performance testing</li>
+<li><b>-DFT_NO_UI</b>     = Disable graphique check</li>
+<li><b>-DFT_FORM</b>      = Enable output for FORM detection</li>
+<li><b>-DFT_TEST_RECOGNISE</b>    = Enable recognition</li>
+<li><b>-DFT_OPTIMISATION</b>  = Enable optimisation</li>
+</ul>
+<p>#Windows (OpenFaceTrackerLib3)</p>
+<p>No Visual Project file for this version</p>
+<p>#Available Arguments
+-o : allows you to open a media source (camera , picture , video, rtsp link..)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./openft -o CAM0 (open camera id=0)
+$ ./openft -o video.avi (open the file video.avi)
+</pre></div>
+</div>
+</div>
+<div class="section" id="contributors">
+<span id="contributors"></span><h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Hamza Bourrahim</li>
+<li>Godeleine Champenois</li>
+<li>Worphy Bimboutsa</li>
+<li>Ralph Obame</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">README</a><ul>
+<li><a class="reference internal" href="#what-is-this-repository-for">What is this repository for?</a></li>
+<li><a class="reference internal" href="#screen">Screen</a></li>
+<li><a class="reference internal" href="#how-do-i-get-set-up">How do I get set up?</a></li>
+<li><a class="reference internal" href="#contributors">Contributors</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Hamza Bourrahim.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/index.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
