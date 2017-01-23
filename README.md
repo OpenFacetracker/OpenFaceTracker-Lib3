@@ -17,19 +17,22 @@ This README would normally document whatever steps are necessary to get facetrac
 ### Screen ###
 
 
-![alt text](http://naper.eu/me/images/facetracker.jpg "FT screen")
+![alt text](http://www.openfacetracker.net/wp-content/uploads/2016/10/13479869_596599990514829_1971266384_n.jpg "OFT screen")
 
-![alt text](http://nsa38.casimages.com/img/2015/10/31/151031055257844926.png "FT screen")
+![alt text](http://www.openfacetracker.net/wp-content/uploads/2016/10/openfacetracker.jpg "OFT screen")
 
 
 ### How do I get set up? ###
 
-build facetracker using source code
+build Openfacetracker using source code
 
-#Linux (Facetracker core)
+#Linux
 
-	$ git clone https://github.com/Facetracker-project/facetracker-core.git
-	$ cd facetracker-core/
+	$ git clone https://github.com/OpenFacetracker/OpenFaceTracker-Lib3.git
+	$ cd OpenFaceTracker-Lib3
+	
+To understand the sructure of the OFT project please read the WIKI .
+
 	
 installing dependecies(Debian - ubuntu) : 
 
