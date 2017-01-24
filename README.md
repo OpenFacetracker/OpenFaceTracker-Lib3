@@ -29,7 +29,7 @@ Build Openfacetracker using source code, to understand the sructure of the OFT p
 
 #Dependecies(Debian - ubuntu) : 
 
-	$ sudo apt-get install libopencv-dev
+http://openfacetracker-lib3.readthedocs.io/en/latest/build_oft.html#building-opencv-3-2
 	
 Please Read the WIKI, so as to get the right verson of OpenCV and QT
 
