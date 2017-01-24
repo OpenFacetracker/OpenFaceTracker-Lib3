@@ -10,10 +10,6 @@ OpenFaceTracker
 Table of Contents
 -----------------
 .. toctree::
-   :hidden:
-
-   index
-.. toctree::
    :maxdepth: 2
 
    Readme <readme>
