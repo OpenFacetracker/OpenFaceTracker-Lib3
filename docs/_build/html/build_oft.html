@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Dependecies &mdash; OpenFaceTracker 3.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="OpenFaceTracker 3.0.1 documentation" href="index.html"/>
+        <link rel="prev" title="Readme" href="readme.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> OpenFaceTracker
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Readme</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Dependencies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#building-opencv-3-2">Building Opencv 3.2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#downloading-opencv3-2-for-linux">Downloading Opencv3.2 for Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#opencv-contrib">Opencv-Contrib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#building-with-extra-options">Building With extra options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">OpenFaceTracker</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Dependecies</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/build_oft.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dependecies">
+<h1>Dependecies<a class="headerlink" href="#dependecies" title="Permalink to this headline">¶</a></h1>
+<p>OpenFaceTrackerLib use Opencv 3.2. This latter has introduced many new algorithms and features comparing to version 2.4. Some modules have been rewritten, some have been reorganized. Although most of the algorithms from 2.4 are still present, the interfaces can differ. You can check out the &lt;b&gt;changelog&lt;/b&gt; via this link</p>
+<ul class="simple">
+<li><a class="reference external" href="http://opencv.org/opencv-3-2.html">http://opencv.org/opencv-3-2.html</a></li>
+</ul>
+<div class="section" id="building-opencv-3-2">
+<h2>Building Opencv 3.2<a class="headerlink" href="#building-opencv-3-2" title="Permalink to this headline">¶</a></h2>
+<p>To get the best environment for OpenFaceTracker3, there are some instructions that you should follow. OpenCV3 must be build with some extra options, so please follow this tutorial .</p>
+<div class="section" id="downloading-opencv3-2-for-linux">
+<h3>Downloading Opencv3.2 for Linux<a class="headerlink" href="#downloading-opencv3-2-for-linux" title="Permalink to this headline">¶</a></h3>
+<p>First download Opencv3.2</p>
+<p><code class="code bash docutils literal"><span class="pre">wget</span> <span class="pre">https://github.com/opencv/opencv/archive/3.2.0.zip</span></code></p>
+<p><code class="code bash docutils literal"><span class="pre">unzip</span> <span class="literal number"><span class="pre">3</span></span><span class="pre">.2.0.zip</span></code></p>
+<p>Create a release folder</p>
+<p><code class="code bash docutils literal"><span class="name builtin"><span class="pre">cd</span></span> <span class="pre">opencv-3.2.0/</span></code></p>
+<p><code class="code bash docutils literal"><span class="pre">mkdir</span> <span class="pre">release</span></code></p>
+<p><code class="code bash docutils literal"><span class="name builtin"><span class="pre">cd</span></span> <span class="pre">release</span></code></p>
+</div>
+<div class="section" id="opencv-contrib">
+<h3>Opencv-Contrib<a class="headerlink" href="#opencv-contrib" title="Permalink to this headline">¶</a></h3>
+<p>OpenFaceTracker3 is using &lt;b&gt;opencv-contrib&lt;/b&gt; it is an experimental and non-free algorithms. It does not receive so much attention from the support team comparing to main repository, but the community makes an effort to keep it in a good shape.</p>
+<p>To download &lt;b&gt;Opencv-contrib&lt;/b&gt;</p>
+<p><code class="code bash docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/opencv/opencv_contrib.git</span></code></p>
+</div>
+<div class="section" id="building-with-extra-options">
+<h3>Building With extra options<a class="headerlink" href="#building-with-extra-options" title="Permalink to this headline">¶</a></h3>
+<p>First, check if you got cmake and qmake installed .</p>
+<p><code class="code bash docutils literal"><span class="pre">cmake</span></code></p>
+<p>install it using apt-get(debian-ubuntu)</p>
+<p><code class="code bash docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">cmake</span></code></p>
+<p><code class="code bash docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">qt5-qmake</span></code></p>
+<p>we will build opencv with some extra function</p>
+<p><code class="code bash docutils literal"><span class="pre">cmake</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">CMAKE_BUILD_TYPE</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">RELEASE</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">CMAKE_INSTALL_PREFIX</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">/usr/local</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">WITH_TBB</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">ON</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">BUILD_NEW_PYTHON_SUPPORT</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">ON</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">WITH_V4L</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">ON</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">INSTALL_C_EXAMPLES</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">ON</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">INSTALL_PYTHON_EXAMPLES</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">ON</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">BUILD_EXAMPLES</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">ON</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">WITH_QT</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">ON</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">WITH_GTK</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">ON</span> <span class="pre">-D</span> <span class="name variable"><span class="pre">WITH_OPENGL</span></span><span class="operator"><span class="pre">=</span></span><span class="pre">ON</span> <span class="pre">-DOPENCV_EXTRA_MODULES_PATH</span><span class="operator"><span class="pre">=</span></span><span class="pre">&lt;path-to-opencv_contrib&gt;/modules</span> <span class="pre">..</span></code></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="readme.html" class="btn btn-neutral" title="Readme" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Hamza Bourrahim.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'3.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

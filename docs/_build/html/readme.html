@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Readme &mdash; OpenFaceTracker 3.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="OpenFaceTracker 3.0.1 documentation" href="index.html"/>
+        <link rel="next" title="Dependecies" href="build_oft.html"/>
+        <link rel="prev" title="OpenFaceTracker" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> OpenFaceTracker
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Readme</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-do-i-get-set-up">How do I get set up?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linux">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linux-adding-options">Linux ( Adding Options)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#available-arguments">Available Arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contributors">Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="build_oft.html">Dependencies</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">OpenFaceTracker</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Readme</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="readme">
+<h1>Readme<a class="headerlink" href="#readme" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="how-do-i-get-set-up">
+<h2>How do I get set up?<a class="headerlink" href="#how-do-i-get-set-up" title="Permalink to this headline">¶</a></h2>
+<p>Build Openfacetracker using source code, to understand the sructure of the OFT project please read the WIKI .</p>
+<p>## Dependecies(Debian - ubuntu) ##</p>
+<blockquote>
+<div>$ sudo apt-get install libopencv-dev</div></blockquote>
+<p>Please Read the WIKI, so as to get the right verson of OpenCV and QT</p>
+</div>
+<div class="section" id="linux">
+<h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>$ git clone <a class="reference external" href="https://github.com/OpenFacetracker/OpenFaceTracker-Lib3.git">https://github.com/OpenFacetracker/OpenFaceTracker-Lib3.git</a>
+$ cd OpenFaceTracker-Lib3</div></blockquote>
+<p>Making the project :</p>
+<blockquote>
+<div>$ make
+*  OpenFaceTracker Building    *
+make compil             : Compil facetracker source code
+make lib                : Build facetracker as a library
+make binary             : Build facetracker as a binary file
+make memleaks           : Check memory leaks</div></blockquote>
+<p>to compile all oft modules :</p>
+<blockquote>
+<div>$ make compil</div></blockquote>
+<p>to generate the binary file :</p>
+<blockquote>
+<div>$ make binary</div></blockquote>
+<p>if you want to use OFT as a library , use :</p>
+<blockquote>
+<div>$ make lib</div></blockquote>
+<p>then execute it using</p>
+<blockquote>
+<div>$ ./openft</div></blockquote>
+</div>
+<div class="section" id="linux-adding-options">
+<h2>Linux ( Adding Options)<a class="headerlink" href="#linux-adding-options" title="Permalink to this headline">¶</a></h2>
+<p>You can compile OpenFaceTracker using different Options .</p>
+<ul class="simple">
+<li>&lt;b&gt;-DFT_USE_COLOR&lt;/b&gt;         = Enable color output</li>
+<li>&lt;b&gt;-DFT_DEBUG_ENABLED&lt;/b&gt;     = Enable Debug mode</li>
+<li>&lt;b&gt;-DFT_ALLOW_EXCEPT&lt;/b&gt;      = Enable exceptions</li>
+<li>&lt;b&gt;-DFT_WINCAM_LIST&lt;/b&gt;       = Enable camera listing for Windows</li>
+<li>&lt;b&gt;-DFT_TEST_PERFORMANCE&lt;/b&gt; = Enable performance testing</li>
+<li>&lt;b&gt;-DFT_NO_UI&lt;/b&gt;             = Disable graphique check</li>
+<li>&lt;b&gt;-DFT_FORM&lt;/b&gt;              = Enable output for FORM detection</li>
+<li>&lt;b&gt;-DFT_TEST_RECOGNISE&lt;/b&gt;    = Enable recognition</li>
+<li>&lt;b&gt;-DFT_OPTIMISATION&lt;/b&gt;      = Enable optimisation</li>
+</ul>
+<p>Windows (OpenFaceTrackerLib3)</p>
+<p>No Visual Project file for this version</p>
+</div>
+<div class="section" id="available-arguments">
+<h2>Available Arguments<a class="headerlink" href="#available-arguments" title="Permalink to this headline">¶</a></h2>
+<p>-o : allows you to open a media source (camera , picture , video, rtsp link..)</p>
+<blockquote>
+<div>$ ./openft -o CAM0 (open camera id=0)
+$ ./openft -o video.avi (open the file video.avi)</div></blockquote>
+</div>
+<div class="section" id="contributors">
+<h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Hamza Bourrahim</li>
+<li>Godeleine Champenois</li>
+<li>Worphy Bimboutsa</li>
+<li>Ralph Obame</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="build_oft.html" class="btn btn-neutral float-right" title="Dependecies" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="OpenFaceTracker" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Hamza Bourrahim.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'3.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

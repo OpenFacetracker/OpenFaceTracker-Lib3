@@ -160,7 +160,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'OpenFaceTracker', u'OpenFaceTracker Documentation',
-     author, 'OpenFaceTracker', 'One line description of project.',
+     author, 'OpenFaceTracker', 'OpenFaceTracker is a facial recognition program capable to detect one or several faces on a picture or a video, and to identify them via a database',
      'Miscellaneous'),
 ]
 
