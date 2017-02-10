@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Readme &mdash; OpenFaceTracker 3.0.1 documentation</title>
+  <title>Getting Started &mdash; OpenFaceTracker 3.0.1 documentation</title>
   
 
   
@@ -84,13 +84,15 @@
           
             
             
-                <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Readme</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#how-do-i-get-set-up">How do I get set up?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#linux">Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#linux-adding-options">Linux ( Adding Options)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#available-arguments">Available Arguments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#contributors">Contributors</a></li>
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quick-installation">Quick Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#downloading-openfacetracker">Downloading OpenFaceTracker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compiling-oft-as-a-library">Compiling OFT as a library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compiling-oft-as-a-standalone-binary-file">Compiling OFT as a standalone binary file</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="build_oft.html">Dependencies</a></li>
@@ -124,11 +126,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Readme</li>
+    <li>Getting Started</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/get_started.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -138,74 +140,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="readme">
-<h1>Readme<a class="headerlink" href="#readme" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="how-do-i-get-set-up">
-<h2>How do I get set up?<a class="headerlink" href="#how-do-i-get-set-up" title="Permalink to this headline">¶</a></h2>
-<p>Build Openfacetracker using source code, to understand the sructure of the OFT project please read the WIKI .</p>
-<p>## Dependecies(Debian - ubuntu) ##</p>
-<blockquote>
-<div>$ sudo apt-get install libopencv-dev</div></blockquote>
-<p>Please Read the WIKI, so as to get the right verson of OpenCV and QT</p>
-</div>
-<div class="section" id="linux">
-<h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div>$ git clone <a class="reference external" href="https://github.com/OpenFacetracker/OpenFaceTracker-Lib3.git">https://github.com/OpenFacetracker/OpenFaceTracker-Lib3.git</a>
-$ cd OpenFaceTracker-Lib3</div></blockquote>
-<p>Making the project :</p>
-<blockquote>
-<div>$ make
-*  OpenFaceTracker Building    *
-make compil             : Compil facetracker source code
-make lib                : Build facetracker as a library
-make binary             : Build facetracker as a binary file
-make memleaks           : Check memory leaks</div></blockquote>
-<p>to compile all oft modules :</p>
-<blockquote>
-<div>$ make compil</div></blockquote>
-<p>to generate the binary file :</p>
-<blockquote>
-<div>$ make binary</div></blockquote>
-<p>if you want to use OFT as a library , use :</p>
-<blockquote>
-<div>$ make lib</div></blockquote>
-<p>then execute it using</p>
-<blockquote>
-<div>$ ./openft</div></blockquote>
-</div>
-<div class="section" id="linux-adding-options">
-<h2>Linux ( Adding Options)<a class="headerlink" href="#linux-adding-options" title="Permalink to this headline">¶</a></h2>
-<p>You can compile OpenFaceTracker using different Options .</p>
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>This document will show you how to get up and running with OpenFaceTracker. You will have you own faciale regonition
+system in 10 minutes.</p>
+<div class="section" id="quick-installation">
+<h2>Quick Installation<a class="headerlink" href="#quick-installation" title="Permalink to this headline">¶</a></h2>
+<p>OpenFaceTracker needs OpenCV3.2 and QT4 installed on your machine, you&#8217;ve got two options :</p>
 <ul class="simple">
-<li>&lt;b&gt;-DFT_USE_COLOR&lt;/b&gt;         = Enable color output</li>
-<li>&lt;b&gt;-DFT_DEBUG_ENABLED&lt;/b&gt;     = Enable Debug mode</li>
-<li>&lt;b&gt;-DFT_ALLOW_EXCEPT&lt;/b&gt;      = Enable exceptions</li>
-<li>&lt;b&gt;-DFT_WINCAM_LIST&lt;/b&gt;       = Enable camera listing for Windows</li>
-<li>&lt;b&gt;-DFT_TEST_PERFORMANCE&lt;/b&gt; = Enable performance testing</li>
-<li>&lt;b&gt;-DFT_NO_UI&lt;/b&gt;             = Disable graphique check</li>
-<li>&lt;b&gt;-DFT_FORM&lt;/b&gt;              = Enable output for FORM detection</li>
-<li>&lt;b&gt;-DFT_TEST_RECOGNISE&lt;/b&gt;    = Enable recognition</li>
-<li>&lt;b&gt;-DFT_OPTIMISATION&lt;/b&gt;      = Enable optimisation</li>
+<li>If your love compiling libraries by hand, please follow  <span class="xref std std-ref">build_oft</span></li>
+<li>Installing Opencv and QT using your favorite packaging tool .</li>
 </ul>
-<p>Windows (OpenFaceTrackerLib3)</p>
-<p>No Visual Project file for this version</p>
-</div>
-<div class="section" id="available-arguments">
-<h2>Available Arguments<a class="headerlink" href="#available-arguments" title="Permalink to this headline">¶</a></h2>
-<p>-o : allows you to open a media source (camera , picture , video, rtsp link..)</p>
-<blockquote>
-<div>$ ./openft -o CAM0 (open camera id=0)
-$ ./openft -o video.avi (open the file video.avi)</div></blockquote>
-</div>
-<div class="section" id="contributors">
-<h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="downloading-openfacetracker">
+<h3>Downloading OpenFaceTracker<a class="headerlink" href="#downloading-openfacetracker" title="Permalink to this headline">¶</a></h3>
+<p>Our github page is available at .. _OftGithub: <a class="reference external" href="https://github.com/OpenFacetracker">https://github.com/OpenFacetracker</a> , make sure your cloning the right repo. OpenFaceTracker-Lib3 is the one under development</p>
+<p><code class="code bash docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/OpenFacetracker/OpenFaceTracker-Lib3.git</span></code></p>
+<p><code class="code bash docutils literal"><span class="name builtin"><span class="pre">cd</span></span> <span class="pre">OpenFaceTracker-Lib3</span></code></p>
+<p>At this step, you&#8217;ve got two options :</p>
 <ul class="simple">
-<li>Hamza Bourrahim</li>
-<li>Godeleine Champenois</li>
-<li>Worphy Bimboutsa</li>
-<li>Ralph Obame</li>
+<li>Compiling OFT as a library</li>
+<li>Compiling OFT as a standalone binary file</li>
 </ul>
+</div>
+<div class="section" id="compiling-oft-as-a-library">
+<h3>Compiling OFT as a library<a class="headerlink" href="#compiling-oft-as-a-library" title="Permalink to this headline">¶</a></h3>
+<p><code class="code bash docutils literal"><span class="pre">make</span> <span class="pre">lib</span></code></p>
+</div>
+<div class="section" id="compiling-oft-as-a-standalone-binary-file">
+<h3>Compiling OFT as a standalone binary file<a class="headerlink" href="#compiling-oft-as-a-standalone-binary-file" title="Permalink to this headline">¶</a></h3>
+<p><code class="code bash docutils literal"><span class="pre">make</span> <span class="pre">compil</span></code></p>
+<p><code class="code bash docutils literal"><span class="pre">make</span> <span class="pre">binary</span></code></p>
+</div>
 </div>
 </div>
 

@@ -2,7 +2,7 @@
    :language: bash
 Dependecies
 ===============
-OpenFaceTrackerLib use Opencv 3.2. This latter has introduced many new algorithms and features comparing to version 2.4. Some modules have been rewritten, some have been reorganized. Although most of the algorithms from 2.4 are still present, the interfaces can differ. You can check out the <b>changelog</b> via this link
+OpenFaceTrackerLib uses Opencv 3.2. This latter has introduced many new algorithms and features comparing to version 2.4. Some modules have been rewritten, some have been reorganized. Although most of the algorithms from 2.4 are still present, the interfaces can differ. You can check out the changelog via this link
 
 * http://opencv.org/opencv-3-2.html
 
@@ -14,7 +14,7 @@ To get the best environment for OpenFaceTracker3, there are some instructions th
 
 
 Downloading Opencv3.2 for Linux
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 First download Opencv3.2
@@ -38,7 +38,7 @@ Opencv-Contrib
 
 OpenFaceTracker3 is using <b>opencv-contrib</b> it is an experimental and non-free algorithms. It does not receive so much attention from the support team comparing to main repository, but the community makes an effort to keep it in a good shape.
 
-To download <b>Opencv-contrib</b>
+To download Opencv-contrib
 
 :bash:`git clone https://github.com/opencv/opencv_contrib.git`
 
