@@ -5,12 +5,12 @@ OpenFaceTracker is a moudlar library, so you can either enable or disable some p
 
 Build Options List
 ---------------------
-To enable or disable some module in openfacetracker, you've got two choices
+To enable or disable some modules in openfacetracker, you've got two choices
 
 
 - Enable modules at execution
 
-- Enable Modules before compilation
+- Enable modules before compilation
 
 
 For the second choice, here is the list of the full Build Options
