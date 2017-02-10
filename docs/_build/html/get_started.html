@@ -93,9 +93,14 @@
 <li class="toctree-l3"><a class="reference internal" href="#compiling-oft-as-a-standalone-binary-file">Compiling OFT as a standalone binary file</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#launching-process">Launching process</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#execution-options-list">Execution Options List</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="build_oft.html">Dependencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">Advanced OFT build</a></li>
 </ul>
 
             
@@ -142,18 +147,18 @@
             
   <div class="section" id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<p>This document will show you how to get up and running with OpenFaceTracker. You will have you own faciale regonition
+<p>This document will show you how to get up and running with OpenFaceTracker. You will have you own facial recognition
 system in 10 minutes.</p>
 <div class="section" id="quick-installation">
 <h2>Quick Installation<a class="headerlink" href="#quick-installation" title="Permalink to this headline">¶</a></h2>
 <p>OpenFaceTracker needs OpenCV3.2 and QT4 installed on your machine, you&#8217;ve got two options :</p>
 <ul class="simple">
-<li>If your love compiling libraries by hand, please follow  <span class="xref std std-ref">build_oft</span></li>
+<li>If you love compiling libraries by hand, please follow  <span class="xref std std-ref">build_oft</span></li>
 <li>Installing Opencv and QT using your favorite packaging tool .</li>
 </ul>
 <div class="section" id="downloading-openfacetracker">
 <h3>Downloading OpenFaceTracker<a class="headerlink" href="#downloading-openfacetracker" title="Permalink to this headline">¶</a></h3>
-<p>Our github page is available at .. _OftGithub: <a class="reference external" href="https://github.com/OpenFacetracker">https://github.com/OpenFacetracker</a> , make sure your cloning the right repo. OpenFaceTracker-Lib3 is the one under development</p>
+<p>Our github page is available at .. _OftGithub: <a class="reference external" href="https://github.com/OpenFacetracker">https://github.com/OpenFacetracker</a> , make sure you&#8217;re cloning the right repo. OpenFaceTracker-Lib3 is the one under development.</p>
 <p><code class="code bash docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/OpenFacetracker/OpenFaceTracker-Lib3.git</span></code></p>
 <p><code class="code bash docutils literal"><span class="name builtin"><span class="pre">cd</span></span> <span class="pre">OpenFaceTracker-Lib3</span></code></p>
 <p>At this step, you&#8217;ve got two options :</p>
@@ -170,6 +175,39 @@ system in 10 minutes.</p>
 <h3>Compiling OFT as a standalone binary file<a class="headerlink" href="#compiling-oft-as-a-standalone-binary-file" title="Permalink to this headline">¶</a></h3>
 <p><code class="code bash docutils literal"><span class="pre">make</span> <span class="pre">compil</span></code></p>
 <p><code class="code bash docutils literal"><span class="pre">make</span> <span class="pre">binary</span></code></p>
+</div>
+</div>
+<div class="section" id="launching-process">
+<h2>Launching process<a class="headerlink" href="#launching-process" title="Permalink to this headline">¶</a></h2>
+<p>After compiling Oft, you can execute it using</p>
+<p><code class="code bash docutils literal"><span class="pre">./openft</span> <span class="pre">&lt;options&gt;</span></code></p>
+<div class="section" id="execution-options-list">
+<h3>Execution Options List<a class="headerlink" href="#execution-options-list" title="Permalink to this headline">¶</a></h3>
+<p>There are lot of options available, here is a list of the main options :</p>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-o <var>&lt;file&gt;</var></span></kbd></td>
+<td>Open the file and execute the detection and recognition module</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-h</span></kbd></td>
+<td>Show help and exit</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-l</span></kbd></td>
+<td>Show the list of all available cameras</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-x</span></kbd></td>
+<td>Testing the XML DB</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-r</span></kbd></td>
+<td>Reading from the OFT config</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-c</span></kbd></td>
+<td>Check the environment</td></tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>

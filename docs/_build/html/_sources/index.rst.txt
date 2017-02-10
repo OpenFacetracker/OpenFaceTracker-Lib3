@@ -14,6 +14,7 @@ Table of Contents
 
    Getting Started <get_started>
    Dependencies <build_oft>
+   Advanced OFT build <advanced>
 
 Quick Informations ?
 -----------------
